@@ -1,0 +1,76 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie"> <![endif]-->
+<!--[if IE 7]>    <html class="ie7 oldie"> <![endif]-->
+<!--[if IE 8]>    <html class="ie8 oldie"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+<!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>My Address Book Application</title>
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<script src="http://enscrollplugin.com/releases/enscroll-0.6.1.min.js"></script>
+        <script src="js.js"></script>
+    </head>
+    <body>
+        <div class="container-fluid pad-me" style="padding-top: 5%;">
+            <div class="row" id="title">
+                Contact Book Application
+            </div>
+            <!--Listing contacts starts here-->
+            <div class="row" id="headers">
+                  <div class="col-sm-5"><input type="text" onKeyPress="searchContact()" class="form-control" placeholder="Search Contact" id="searchbx"/></div>
+                  <div class="col-sm-1"><span onClick="clrSearch()" class="btn btn-info">Clear</span></div> 
+                  <div class="col-sm-6"><span onClick="addContact()" class="btn btn-info">Add Contact</span></div>
+            </div>
+            <div id="scrolls">
+            	<div class="contact well-sm well">Abdulgafar Obeitor</div>
+                <div class="contact well-sm well">Ahmad Obeitor</div>
+                <div class="contact well-sm well">Abdulqaweeyu Obeitor</div>
+                <div class="contact well-sm well">Nimatullah Obeitor</div>
+                <div class="contact well-sm well">Zafirat Obeitor</div>
+                <div class="contact well-sm well">Muhammad Alameen Obeitor</div>
+                <div class="contact well-sm well">Salamat Obeitor</div>
+                <div class="contact well-sm well">Ibrahim Khalil Obeitor</div>
+            </div> 
+            
+            <!--Contact Form -->
+		<div id="formdiv"></div>
+		<form action="#" id="contact">
+			<h3>New Contact</h3>
+            <h6 id="error"> &nbsp </h6>
+			<div class="form-group">
+			<label>Name: </label>
+			<input type="text" class="form-control" id="name" placeholder="Name"/></div>
+			<div class="form-group" id="hp">
+			<label>Tel No: </label>
+            <input type="text" class="form-control tel" placeholder="Telephone Number"/>
+            <input type="button" class="btn btn-xs btn-info" value="More" id="moreHp" onClick="addTel()"/>
+            </div>
+			<div class="form-group" id="em">
+			<label>Email:</label>
+			<input class="form-control email" type="email"  placeholder="Email"/>
+            <input type="button" class="btn btn-xs btn-info" id="moreEm" value="More" onClick="addEmail()"/>
+            </div>
+            <div class="form-group">
+			<input type="button" class="btn-success btn" id="add" value="Add"/>
+            <input type="button" class="btn-success btn edit" value="Change"/>
+			<input type="button" onClick="closeForm()" class="btn-warning btn" value="Cancel"/></div>
+		</form>
+        <div id="contact-view">
+        <input type="button" onClick="closeForm()" class="btn-danger btn" value="Cancel"/>
+        <h6 id="errV"> &nbsp </h6>
+        <h3 id="c-name">Abdulgafar Obeitor</h3>
+        <table class="table table-condensed">
+        <tbody id="table">
+        </tbody>
+        </table>
+        <input type="button" onClick="" class="btn-warning btn editMe" value="Edit"/>
+        <input type="button" onClick="" class="btn-danger btn del" value="Delete"/>
+        </div>
+    </body>
+</html>

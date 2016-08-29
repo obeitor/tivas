@@ -1,0 +1,114 @@
+#title{
+    background: #43721a;
+    border-radius: 10%;
+    box-shadow: 0 0 10px 5px #000;
+    color: #f8cdf8;
+    font-size: 3vh;
+    padding: 6px;
+    font-weight: bolder;
+    font-variant: small-caps;
+    text-align: center;
+}
+.login{
+    display: none;
+}
+#headers{
+    background: #d0dbbc;
+    padding: 6px;
+    font-size: 2vh;
+    font-variant: small-caps;
+    font-weight: bold;
+    color: #454446;
+    text-align: center;
+}
+#scrolls{
+    overflow: auto; /* Start writing your markup with this style */
+    width: auto;   /* The dimensions of your content pane */
+    height: 400px;
+    border: 1px solid #6B6969;
+	background: #e2ffe3; padding:0 5px; box-shadow: 0 2px 5px 2px #6B6969;
+}
+.vertical-handle {
+    width: 100%;
+	border-radius:7px;
+	z-index:100;
+    background-color: #C7C6C6; /* The color of the scrollbar handle */
+}
+.vertical-track {
+    width: 7px;
+	z-index:99;           /* The width of the scrollbar */
+    background-color: #e2ffe3;   /* The color of the scrollbar track*/
+}
+.vertical-track:hover,
+.vertical-track.dragging{
+	width: 10px;
+	background:#666060;
+}
+.contact{
+	color:#163053;
+	font-size:2vh;
+	font-variant:small-caps;
+	text-decoration: none;
+}
+ .contact:link,
+ .contact:hover,
+ .contact:active{
+	 cursor:pointer;
+	box-shadow: 0 0 5px 2px #666060 inset;
+}
+a.no-underline{
+	text-decoration:none;
+}
+#grps-cont{
+	background:#83BCE0;
+}
+.grp{
+	text-align:center;
+	padding:5px;
+}
+.grp:hover, .grp:focus,
+.grp:active{
+	background:#ECEEEF;
+	cursor:pointer;
+}
+
+h3{
+font-size:3vh;
+text-align:center;
+font-weight:bolder;
+font-variant:small-caps
+}
+input[type=button]{
+width:49%;
+}
+input[type=button].btn-xs{
+	width:20%;
+}
+#formdiv{
+position: absolute;
+top: 0px;
+left: 0px;
+height: 100%;
+width: 100%;
+z-index:200;
+background: #000;
+opacity: 0.9;
+display:none;
+}
+#contact, #group, #contact-view{
+width:300px;
+background-color:#C9B6B7;
+position: absolute;
+left: 50%;
+top: 50%;
+display:none;
+z-index:202;
+border-radius:5%;
+padding:10px 10px;
+margin-left:-30%;
+margin-top:-20%;
+}
+#contact,#group{
+	font-size:2vh;
+	font-weight:bold;
+}
